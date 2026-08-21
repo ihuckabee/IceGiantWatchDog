@@ -1,0 +1,21 @@
+What's in this folder???
+
+plottingoutputs.py
+- plots 1D, 3D, and observed spectra
+- can be run immediately using the precomputed spectra in RefFiles, no picaso dependencies
+- precomputed spectra are 1D and 3D (3x3) with the cloud base, and 1D cloud-free
+
+RefFiles
+- precomputed spectra, cloud info, obs spectrum, Neptune P-T profile from Irwin 2021
+
+3DDisco.py 
+- to create 3D spectra to feed into plottingoutputs.py
+- requires picaso reference files. For some reason. Need to change pathname to match yours
+- can also uncomment the disco plotting line at the end if you want that plot
+- was originally going to make it spit out a pickle file with the full output so you can make the disco plot anytime
+- but the pickles are like 9 GBs. And they won't upload to the drive because they're so fat. Lol
+- if you want the 3x3 or 5x5 full output pickle for the cloud base I do have that on ash
+
+1DwithClouds.py 
+- to create 1D spectra to feed into plottingoutputs.py
+- requires picaso reference files. For some reason. Need to change pathname to match yours
